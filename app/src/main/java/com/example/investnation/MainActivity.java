@@ -2,6 +2,7 @@ package com.example.investnation;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.os.Handler;
 import android.widget.ProgressBar;
@@ -34,8 +35,7 @@ public class MainActivity extends AppCompatActivity {
                     android.os.SystemClock.sleep(50);
                     mHandler.post(new Runnable() {
                         @Override
-                        public void run() {
-                            progressBar.setProgress(flag);
+                        public void run() { progressBar.setProgress(flag);
                         }
                     });
 
@@ -44,15 +44,16 @@ public class MainActivity extends AppCompatActivity {
                    @Override
                    public void run() {
                        // start the next activity using an intent
+
                    }
                });
 
                 }
+                Intent intent = new Intent(MainActivity.this,investActivity.class);
+                startActivity(intent);
             }
         });
         thread.start();
-
-
     }
 
 }
