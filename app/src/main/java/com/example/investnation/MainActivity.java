@@ -45,9 +45,9 @@ public class MainActivity extends AppCompatActivity {
                    @Override
                    public void run() {
                        // start the next activity using an intent
-                    //   startActivity(new Intent(MainActivity.this, FinancialLitracyActivity.class));
-                       Intent intent = new Intent(MainActivity.this,investActivity.class);
-                       startActivity(intent);
+                       startActivity(new Intent(MainActivity.this, FinancialLitracyActivity.class));
+                      // Intent intent = new Intent(MainActivity.this,investActivity.class);
+                       //startActivity(intent);
                    }
                });
 
