@@ -49,8 +49,8 @@ public class MainActivity extends AppCompatActivity {
                });
 
                 }
-                Intent intent = new Intent(MainActivity.this,investActivity.class);
-                startActivity(intent);
+                Intent intentInvest = new Intent(MainActivity.this,investActivity.class);
+                startActivity(intentInvest);
             }
         });
         thread.start();
