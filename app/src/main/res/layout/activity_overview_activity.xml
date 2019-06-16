@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp"
+    tools:context=".overviewpage_activity"
+    android:background="@color/white">
+
+    <HorizontalScrollView
+        android:id="@+id/horizontalScrollView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/white">
+
+            <ImageView
+                android:id="@+id/investImage"
+                android:layout_width="275dp"
+                android:layout_height="292dp"
+
+                android:layout_marginTop="80dp"
+                android:layout_marginEnd="8dp"
+                android:src="@mipmap/inv" />
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="242dp"
+                android:layout_height="105dp"
+                android:layout_below="@+id/investImage"
+
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="160dp"
+                android:layout_marginEnd="8dp"
+                android:fontFamily="monospace"
+                android:text="We'll help you to Easily invest your money much more affordably."
+                android:textSize="18sp" />
+
+            <ImageView
+                android:id="@+id/saveimage"
+                android:layout_width="275dp"
+                android:layout_height="292dp"
+                android:layout_marginTop="80dp"
+
+                android:src="@mipmap/sav"
+                android:layout_centerHorizontal="true"/>
+
+            <TextView
+                android:id="@+id/txtSave"
+                android:layout_width="242dp"
+                android:layout_height="120dp"
+                android:layout_below="@+id/investImage"
+
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="160dp"
+                android:layout_marginEnd="8dp"
+                android:fontFamily="monospace"
+                android:text="Create a savings account  and we personalise your budget and maintain your bills for you."
+                android:textSize="18sp" />
+
+            <ImageView
+                android:id="@+id/literacyimage"
+                android:layout_width="275dp"
+                android:layout_height="292dp"
+                android:layout_marginTop="80dp"
+
+                android:src="@mipmap/literac"
+                android:layout_centerHorizontal="true"/>
+
+            <TextView
+                android:id="@+id/txtliteracy"
+                android:layout_width="242dp"
+                android:layout_height="220dp"
+                android:layout_below="@+id/investImage"
+
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="120dp"
+                android:layout_marginEnd="8dp"
+                android:fontFamily="monospace"
+                android:text="Join our financial literacy platform with convenient channels to access financial products,complex financial product language, low affordability and accessibility to financial advisors and planners"
+                android:textSize="18sp" />
+
+        </LinearLayout>
+
+
+    </HorizontalScrollView>
+
+
+
+
+</RelativeLayout>
