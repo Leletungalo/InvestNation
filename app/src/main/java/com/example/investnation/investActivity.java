@@ -15,7 +15,7 @@ public class investActivity extends AppCompatActivity {
         setContentView(R.layout.activity_invest);
 
         investmentView = findViewById(R.id.investActivityListId);
-        question = findViewById(R.id.qustionButtonForInvestment);
+       // question = findViewById(R.id.qustionButtonForInvestment);
         String[] food = {"apple","chicken","papa","bread","kaka","sonka","grape","banana","nkanks","mbegu","nantsika","Liesbeck","dlalagam","hali"};
         CustomAdapter customAdapter = new CustomAdapter(getApplicationContext(),food);
         investmentView.setAdapter(customAdapter);

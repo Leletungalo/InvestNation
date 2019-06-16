@@ -6,6 +6,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.BaseAdapter;
 import android.widget.Button;
+import android.widget.ImageView;
 import android.widget.TextView;
 
 public class CustomAdapter extends BaseAdapter {
@@ -50,11 +51,16 @@ public class CustomAdapter extends BaseAdapter {
 
     @Override
     public View getView(int i, View view, ViewGroup viewGroup) {
-        view = layoutInflater.inflate(R.layout.activity_list,null);
-        TextView foodEle = view.findViewById(R.id.nameOfInvestment);
-        Button que = view.findViewById(R.id.qustionButtonForInvestment);
+        view = layoutInflater.inflate(R.layout.activity_financial_litracy,null);
+        //TextView foodEle = view.findViewById(R.id.nameOfInvestment);
+      //  Button que = view.findViewById(R.id.qustionButtonForInvestment);
+        TextView textView = view.findViewById(R.id.textView);
+        TextView textView2 = view.findViewById(R.id.textView2);
+        ImageView imageView = view.findViewById(R.id.imageView);
 
-        foodEle.setText(food[i]);
+        textView.setText(food[i]);
+        textView2.setText(dicri[i]);
+        imageView.setImageResource(numId);
         return view;
     }
 }

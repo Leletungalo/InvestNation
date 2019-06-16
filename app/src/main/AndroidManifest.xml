@@ -19,6 +19,7 @@
         <activity android:name=".financialListView"></activity>
         <activity android:name=".FinancialLitracyActivity" />
         <activity android:name=".investActivity"/>
+        <activity android:name=".Main2Activity"/>
         <activity
             android:name=".MainActivity"
             android:theme="@style/AppTheme.NoActionBar">

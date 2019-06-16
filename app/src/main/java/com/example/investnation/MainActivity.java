@@ -8,6 +8,9 @@ import android.os.Handler;
 import android.widget.ProgressBar;
 import android.widget.Toast;
 
+import com.amazonaws.mobile.config.AWSConfiguration;
+import com.amazonaws.mobileconnectors.appsync.AWSAppSyncClient;
+
 public class MainActivity extends AppCompatActivity {
 
     ProgressBar progressBar;
@@ -15,10 +18,15 @@ public class MainActivity extends AppCompatActivity {
     Handler mHandler = new Handler();
     Thread thread;
 
+
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+
+
 
         flag = 0;
         progressBar = findViewById(R.id.progressBar);
@@ -30,7 +38,7 @@ public class MainActivity extends AppCompatActivity {
         thread = new Thread(new Runnable() {
             @Override
             public void run() {
-                while(flag < 100){
+                while(flag < 100) {
                     flag++;
                     android.os.SystemClock.sleep(50);
                     mHandler.post(new Runnable() {
@@ -40,18 +48,18 @@ public class MainActivity extends AppCompatActivity {
                         }
                     });
 
-
+                }
                mHandler.post(new Runnable() {
                    @Override
                    public void run() {
+
                        // start the next activity using an intent
                     //   startActivity(new Intent(MainActivity.this, FinancialLitracyActivity.class));
-                       Intent intent = new Intent(MainActivity.this,investActivity.class);
-                       startActivity(intent);
+                     //  Intent intent = new Intent(MainActivity.this,investActivity.class);
+                     //  startActivity(intent);
+                      startActivity(new Intent(MainActivity.this,financialListView.class));
                    }
                });
-
-                }
             }
         });
         thread.start();
