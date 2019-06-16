@@ -35,7 +35,8 @@ public class MainActivity extends AppCompatActivity {
                     android.os.SystemClock.sleep(50);
                     mHandler.post(new Runnable() {
                         @Override
-                        public void run() { progressBar.setProgress(flag);
+                        public void run() {
+                            progressBar.setProgress(flag);
                         }
                     });
 
@@ -44,13 +45,13 @@ public class MainActivity extends AppCompatActivity {
                    @Override
                    public void run() {
                        // start the next activity using an intent
-
+                    //   startActivity(new Intent(MainActivity.this, FinancialLitracyActivity.class));
+                       Intent intent = new Intent(MainActivity.this,investActivity.class);
+                       startActivity(intent);
                    }
                });
 
                 }
-                Intent intentInvest = new Intent(MainActivity.this,investActivity.class);
-                startActivity(intentInvest);
             }
         });
         thread.start();
