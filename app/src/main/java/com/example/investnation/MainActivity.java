@@ -24,7 +24,6 @@ public class MainActivity extends AppCompatActivity {
         progressBar = findViewById(R.id.progressBar);
         progressbar();
 
-
     }
 
     public void progressbar(){
@@ -40,14 +39,19 @@ public class MainActivity extends AppCompatActivity {
                             progressBar.setProgress(flag);
                         }
                     });
+
+
+               mHandler.post(new Runnable() {
+                   @Override
+                   public void run() {
+                       // start the next activity using an intent
+                    //   startActivity(new Intent(MainActivity.this, FinancialLitracyActivity.class));
+                       Intent intent = new Intent(MainActivity.this,investActivity.class);
+                       startActivity(intent);
+                   }
+               });
+
                 }
-                mHandler.post(new Runnable() {
-                    @Override
-                    public void run() {
-                        // start the FinancialLitracyActivity
-                        startActivity(new Intent(MainActivity.this, FinancialLitracyActivity.class));
-                    }
-                });
             }
         });
         thread.start();
