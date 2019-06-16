@@ -1,3 +1,7 @@
 <resources>
     <string name="app_name">InvestNation</string>
+    <string name="title_activity_financial_litracy">Financial Litracy</string>
+    <string name="invest_heading">Investment</string>
+    <string name="investment_description">This is a rewarding apportunity.
+        This will increase your wealth drastically.</string>
 </resources>
