@@ -11,8 +11,10 @@ import android.widget.TextView;
 public class CustomAdapter extends BaseAdapter {
     private Context context;
     private String[] food;
-    private String[] dicri;
+
+    private String[] descriptions;
     private int numId;
+
     private LayoutInflater layoutInflater;
 
 
@@ -20,14 +22,14 @@ public class CustomAdapter extends BaseAdapter {
     CustomAdapter(Context applicationContext,String[] food){
         this.context = applicationContext;
         this.food = food;
-     //   this.numId = numID;
+     // this.numId = numID;
         this.layoutInflater = (LayoutInflater.from(applicationContext));
     }
 
-    CustomAdapter(Context applicationContext,String[] headings,String[] discription,int image){
+    CustomAdapter(Context applicationContext,String[] headings,String[] discriptions,int image){
         this.context = applicationContext;
         this.food = headings;
-        this.dicri = discription;
+        this.descriptions = discriptions;
         this.numId = image;
         this.layoutInflater = (LayoutInflater.from(applicationContext));
 

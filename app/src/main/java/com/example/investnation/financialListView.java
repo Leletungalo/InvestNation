@@ -8,10 +8,11 @@ import android.widget.ListView;
 import android.widget.TextView;
 
 public class financialListView extends AppCompatActivity {
-    ListView finacialListView;
-    TextView textView;
-    TextView textView2;
-    ImageView imageView;
+    private ListView listview;
+    private TextView heading_textview;
+    private TextView description_textview;
+    private ImageView imageview;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
