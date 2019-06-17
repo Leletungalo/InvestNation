@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp"
+    tools:context=".overview_activity"
+    android:background="@color/white">
+
+    <ScrollView
+        android:id="@+id/horizontalScrollView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/white"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/investImage"
+                android:layout_width="380dp"
+                android:layout_height="214dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="8dp"
+                android:src="@mipmap/emergency_animation" />
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="380dp"
+                android:layout_height="81dp"
+                android:layout_below="@+id/investImage"
+
+                android:layout_marginStart="8dp"
+
+                android:layout_marginEnd="8dp"
+                android:fontFamily="monospace"
+                android:text="Save for rainy days."
+                android:textSize="18sp" />
+
+            <ImageView
+                android:id="@+id/saveimage"
+                android:layout_width="380dp"
+                android:layout_height="193dp"
+                android:layout_centerHorizontal="true"
+
+                android:layout_marginTop="20dp"
+                android:src="@mipmap/uni_animation" />
+
+            <TextView
+                android:id="@+id/txtSave"
+                android:layout_width="242dp"
+                android:layout_height="36dp"
+                android:layout_below="@+id/investImage"
+
+                android:layout_marginStart="8dp"
+
+                android:layout_marginEnd="8dp"
+                android:fontFamily="monospace"
+                android:text="Save For Education."
+                android:textSize="18sp" />
+
+            <ImageView
+                android:id="@+id/literacyimage"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_centerHorizontal="true"
+
+                android:layout_marginTop="20dp"
+                android:src="@mipmap/b" />
+
+            <TextView
+                android:id="@+id/txtliteracy"
+                android:layout_width="242dp"
+                android:layout_height="80dp"
+                android:layout_below="@+id/investImage"
+
+                android:layout_marginStart="8dp"
+
+                android:layout_marginEnd="8dp"
+                android:fontFamily="monospace"
+                android:text="Save for Baecation"
+                android:textSize="18sp" />
+
+        </LinearLayout>
+
+
+    </ScrollView>
+
+
+
+
+</RelativeLayout>
