@@ -8,4 +8,10 @@
         app:showAsAction="always">
 
     </item>
+    <item
+        android:title="about"
+        android:id="@+id/btnabout"
+        app:showAsAction="always">
+
+    </item>
 </menu>

@@ -44,7 +44,7 @@ public class MainActivity extends AppCompatActivity {
                    @Override
                    public void run() {
                        // start the next activity using an intent
-                       Intent intent = new Intent(MainActivity.this, app_functions_overviwe_activity.class);
+                       Intent intent = new Intent(MainActivity.this, overview_activity.class);
                        startActivity(intent);
                    }
                });
